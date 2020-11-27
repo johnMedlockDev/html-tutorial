@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <!-- get example -->
+    <form method="get">
+        <input type="text" name="first" value=""
+        placeholder="John">
+        <input type="text" name="last" value=""
+        placeholder="Medlock">
+        <input type="text" name="age" placeholder="31">
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- post example -->
+    <form method="POST" action="./index.html">
+        <input type="text" name="first" value=""
+        placeholder="John">
+        <input type="text" name="last" value=""
+        placeholder="Medlock">
+        <input type="password" name="age" placeholder="31" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Real World post example -->
+    <form method="POST" action="./action.php">
+        <input type="text" name="first" value=""
+        placeholder="John">
+        <input type="text" name="last" value=""
+        placeholder="Medlock">
+        <input type="text" name="age" placeholder="31">
+        <button type="submit">Submit</button>
+    </form>
+    
+    <!-- upload files through a form -->
+    <form method="post" enctype="multipart/form-data" action="./upload.php">
+        <input type="file" name="pic" />
+        <input type="submit" value="Upload" />
+    </form>
+
+    <!-- various input types -->
+    <form method="GET">
+        <label for="word">
+            Input a Word
+            <input type="text" name="word">
+        </label>
+        <label for="gender">
+            <input type="checkbox" name="gender"
+            value="1">Male
+            <input type="checkbox" name="gender" value="2">Female
+        </label>
+        <label for="color">
+            <input type="radio" name="color" value="F00">Red
+
+            <input type="radio" name="color" value="0F0">Green
+
+            <input type="radio" name="color" value="00F">Blue
+        </label>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
